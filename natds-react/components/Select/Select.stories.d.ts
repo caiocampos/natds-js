@@ -1,0 +1,11 @@
+import { Story, Meta } from '@storybook/react';
+import { SelectProps } from '.';
+declare const _default: Meta<import("@storybook/react").Args>;
+export default _default;
+export declare const Playground: Story<SelectProps>;
+export declare const WithPlaceholder: Story<SelectProps>;
+export declare const WithHelperText: Story<SelectProps>;
+export declare const HasError: Story<SelectProps>;
+export declare const HasSuccess: Story<SelectProps>;
+export declare const Required: Story<SelectProps>;
+export declare const Disabled: Story<SelectProps>;

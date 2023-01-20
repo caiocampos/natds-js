@@ -1,0 +1,10 @@
+import { Story, Meta } from '@storybook/react';
+import { ButtonProps } from '.';
+declare const _default: Meta<import("@storybook/react").Args>;
+export default _default;
+export declare const Playground: Story<ButtonProps>;
+export declare const Variants: Story<ButtonProps>;
+export declare const Sizes: Story<ButtonProps>;
+export declare const Disabled: Story<ButtonProps>;
+export declare const Icon: Story<ButtonProps>;
+export declare const FullWidth: Story<ButtonProps>;

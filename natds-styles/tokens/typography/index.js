@@ -1,0 +1,28 @@
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.fontSize = void 0;
+/* eslint-disable sort-keys */
+var natds_themes_1 = __importDefault(require("@naturacosmeticos/natds-themes"));
+var theme = natds_themes_1.default.natura.light;
+/**
+ * @deprecated since 0.19. It will be removed at 1.0.
+ * Please use typography tokens directly from the theme.
+ */
+exports.fontSize = {
+    h1: theme.heading1,
+    h2: theme.heading2,
+    h3: theme.heading3,
+    h4: theme.heading4,
+    h5: theme.heading5,
+    h6: theme.heading6,
+    subtitle1: theme.subtitle1,
+    subtitle2: theme.subtitle2,
+    body1: theme.body1,
+    body2: theme.body2,
+    button: theme.button.label,
+    caption: theme.caption,
+    overline: theme.overline
+};
+//# sourceMappingURL=index.js.map

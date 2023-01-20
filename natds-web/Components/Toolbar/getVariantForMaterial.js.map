@@ -1,0 +1,1 @@
+{"version":3,"file":"getVariantForMaterial.js","sourceRoot":"","sources":["../../../src/Components/Toolbar/getVariantForMaterial.ts"],"names":[],"mappings":";;AAKO,IAAM,qBAAqB,GAAgE,UAAC,EAAgC;QAA9B,OAAO,aAAA;IAC1G,IAAI,OAAO,OAAO,KAAK,WAAW,IAAI,OAAO,KAAK,WAAW,EAAE;QAC7D,OAAO,SAAS,CAAA;KACjB;IAED,OAAO,OAAO,CAAA;AAChB,CAAC,CAAA;AANY,QAAA,qBAAqB,yBAMjC"}

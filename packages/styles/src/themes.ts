@@ -8,6 +8,8 @@ import { aesopLight } from './themes/aesop/aesop-light'
 import { aesopDark } from './themes/aesop/aesop-dark'
 import { biomeLight } from './themes/biome/biome-light'
 import { biomeDark } from './themes/biome/biome-dark'
+import { eloLight } from './themes/elo/elo-light'
+import { eloDark } from './themes/elo/elo-dark'
 
 export { ITheme } from './themes/ITheme'
 
@@ -31,5 +33,9 @@ export default {
   biome: {
     dark: biomeDark,
     light: biomeLight
+  },
+  elo: {
+    dark: eloDark,
+    light: eloLight
   }
 }

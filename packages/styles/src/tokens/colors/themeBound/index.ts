@@ -4,6 +4,7 @@ import { avonDarkColorTokens, avonLightColorTokens } from './avon'
 import { theBodyShopDarkColorTokens, theBodyShopLightColorTokens } from './theBodyShop'
 import { aesopDarkColorTokens, aesopLightColorTokens } from './aesop'
 import { biomeDarkColorTokens, biomeLightColorTokens } from './biome'
+import { eloDarkColorTokens, eloLightColorTokens } from './elo'
 
 /**
  * @deprecated theme-bound `colorTokens` are deprecated since v0.20 and will be removed at v1.0.
@@ -60,8 +61,8 @@ export const colorTokens = {
   aesopLightColorTokens,
 
   /**
-   * @deprecated `aesopDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-   * Please use `theme.aesop.dark.color` from `natds-themes`.
+   * @deprecated `biomeDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
+   * Please use `theme.biome.dark.color` from `natds-themes`.
    */
   biomeDarkColorTokens,
 
@@ -69,5 +70,17 @@ export const colorTokens = {
    * @deprecated `biomeLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
    * Please use `theme.biome.light.colors` from `natds-themes`.
    */
-  biomeLightColorTokens
+  biomeLightColorTokens,
+
+  /**
+   * @deprecated `eloDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
+   * Please use `theme.elo.dark.color` from `natds-themes`.
+   */
+  eloDarkColorTokens,
+
+  /**
+   * @deprecated `eloLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
+   * Please use `theme.elo.light.colors` from `natds-themes`.
+   */
+  eloLightColorTokens
 }

@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import hexToRgba from 'hex-to-rgba'
 import { Theme } from '@naturacosmeticos/natds-themes'
 import { ITheme } from './ITheme'
@@ -616,3 +617,5 @@ export const parseTheme = (theme: Theme): ITheme => {
     }
   }
 }
+
+export default parseTheme

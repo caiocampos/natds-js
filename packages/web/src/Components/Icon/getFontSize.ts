@@ -19,4 +19,3 @@ export const getFontSize : ({ size, theme }: IconFontSizeArgs) => string = ({ si
 
   return '1em'
 }
-z

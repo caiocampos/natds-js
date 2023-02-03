@@ -1,3 +1,5 @@
+import { consultoriaDeBelezaDark } from 'themes/consultoriaDeBeleza/consultoriaDeBeleza-dark'
+import { consultoriaDeBelezaLight } from 'themes/consultoriaDeBeleza/consultoriaDeBeleza-light'
 import { naturaLight } from './themes/natura/natura-light'
 import { naturaDark } from './themes/natura/natura-dark'
 import { avonLight } from './themes/avon/avon-light'
@@ -31,5 +33,9 @@ export default {
   biome: {
     dark: biomeDark,
     light: biomeLight
+  },
+  consultoriaDeBeleza: {
+    dark: consultoriaDeBelezaDark,
+    light: consultoriaDeBelezaLight
   }
 }

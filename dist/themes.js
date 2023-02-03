@@ -1,6 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-var consultoriaDeBeleza_dark_1 = require("themes/consultoriaDeBeleza/consultoriaDeBeleza-dark");
-var consultoriaDeBeleza_light_1 = require("themes/consultoriaDeBeleza/consultoriaDeBeleza-light");
+var consultoriaDeBeleza_dark_1 = require("./themes/consultoriaDeBeleza/consultoriaDeBeleza-dark");
+var consultoriaDeBeleza_light_1 = require("./themes/consultoriaDeBeleza/consultoriaDeBeleza-light");
 var natura_light_1 = require("./themes/natura/natura-light");
 var natura_dark_1 = require("./themes/natura/natura-dark");
 var avon_light_1 = require("./themes/avon/avon-light");

@@ -19,7 +19,7 @@ export declare const themes: {
         light: import("./Themes/IThemeWeb").IThemeWebBase;
         dark: import("./Themes/IThemeWeb").IThemeWebBase;
     };
-    elo: {
+    consultoriaDeBeleza: {
         light: import("./Themes/IThemeWeb").IThemeWebBase;
         dark: import("./Themes/IThemeWeb").IThemeWebBase;
     };

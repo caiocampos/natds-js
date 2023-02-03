@@ -1,5 +1,5 @@
 import { Theme } from '@naturacosmeticos/natds-themes'
-import { ITypography } from 'tokens/typography/ITypography'
+import { ITypography } from '../tokens/typography/ITypography'
 
 export const getTypography = (theme: Theme): ITypography => {
   const { typography } = theme

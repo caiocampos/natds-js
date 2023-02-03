@@ -1,6 +1,28 @@
 /* eslint-disable sort-keys */
+import { Theme } from '@naturacosmeticos/natds-themes'
 import { IIconSizes } from './IIconSizes'
-import { sizes } from '../sizes'
+import { getSizes, sizes } from '../sizes'
+
+export const getIconSizes = (theme: Theme): IIconSizes => {
+  const themeSizes = getSizes(theme)
+  return {
+    micro: themeSizes.small,
+    tiny: themeSizes.standard,
+    small: themeSizes.semi,
+    standard: themeSizes.medium,
+    medium: themeSizes.large,
+    large: themeSizes.largeX,
+    largex: themeSizes.huge,
+    largeX: themeSizes.huge,
+    largexx: themeSizes.hugeX,
+    largeXX: themeSizes.hugeX,
+    huge: themeSizes.hugeXX,
+    hugex: themeSizes.hugeXXX,
+    hugeX: themeSizes.hugeXXX,
+    hugexx: themeSizes.veryHuge,
+    hugeXX: themeSizes.veryHuge
+  }
+}
 
 export const iconSizes: IIconSizes = {
   micro: sizes.small,

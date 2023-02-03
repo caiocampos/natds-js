@@ -1,9 +1,45 @@
 /* eslint-disable import/prefer-default-export */
+import { Theme } from '@naturacosmeticos/natds-themes'
 import { naturaDarkColorTokens, naturaLightColorTokens } from './natura'
 import { avonDarkColorTokens, avonLightColorTokens } from './avon'
 import { theBodyShopDarkColorTokens, theBodyShopLightColorTokens } from './theBodyShop'
 import { aesopDarkColorTokens, aesopLightColorTokens } from './aesop'
 import { biomeDarkColorTokens, biomeLightColorTokens } from './biome'
+import { IColorThemeTokens } from './IColorThemeTokens'
+
+export const getColorTokens = (theme: Theme): IColorThemeTokens => {
+  const { color: themeColor } = theme
+  return {
+    colorPrimary: themeColor.primary,
+    colorOnPrimary: themeColor.onPrimary,
+    colorPrimaryLight: themeColor.primaryLight,
+    colorOnPrimaryLight: themeColor.onPrimaryLight,
+    colorPrimaryDark: themeColor.primaryDark,
+    colorOnPrimaryDark: themeColor.onPrimaryDark,
+    colorSecondary: themeColor.secondary,
+    colorOnSecondary: themeColor.onSecondary,
+    colorSecondaryLight: themeColor.secondaryLight,
+    colorOnSecondaryLight: themeColor.onSecondaryLight,
+    colorSecondaryDark: themeColor.secondaryDark,
+    colorOnSecondaryDark: themeColor.onSecondaryDark,
+    colorBackground: themeColor.background,
+    colorOnBackground: themeColor.onBackground,
+    colorSurface: themeColor.surface,
+    colorOnSurface: themeColor.onSurface,
+    colorHighlight: themeColor.highlight,
+    colorHighEmphasis: themeColor.highEmphasis,
+    colorMediumEmphasis: themeColor.mediumEmphasis,
+    colorLowEmphasis: themeColor.lowEmphasis,
+    colorLink: themeColor.link,
+    colorOnLink: themeColor.onLink,
+    colorSuccess: themeColor.success,
+    colorOnSuccess: themeColor.onSuccess,
+    colorWarning: themeColor.warning,
+    colorOnWarning: themeColor.onWarning,
+    colorAlert: themeColor.alert,
+    colorOnAlert: themeColor.onAlert
+  }
+}
 
 /**
  * @deprecated theme-bound `colorTokens` are deprecated since v0.20 and will be removed at v1.0.

@@ -1,11 +1,17 @@
 /* eslint-disable sort-keys */
-import theme, { Theme } from '@naturacosmeticos/natds-themes'
-import { deprecatedSizes } from './deprecatedSizes'
+import themes, { Theme } from '@naturacosmeticos/natds-themes'
+import { deprecatedSizes, getDeprecatedSizes } from './deprecatedSizes'
 import { ISizes } from './ISizes'
 
-const { size }: Theme = theme.natura.light
+export const getSizes = (theme: Theme): ISizes => {
+  const { size } = theme
+  return {
+    ...getDeprecatedSizes(theme),
+    ...size
+  }
+}
 
 export const sizes : ISizes = {
   ...deprecatedSizes,
-  ...size
+  ...themes.natura.light.size
 }

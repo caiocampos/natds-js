@@ -1,6 +1,34 @@
 /* eslint-disable sort-keys */
+import { Theme } from '@naturacosmeticos/natds-themes'
 import { IButtonSizes } from './IButtonSizes'
-import { sizes } from '../sizes'
+import { getSizes, sizes } from '../sizes'
+
+export const getButtonSizes = (theme: Theme): IButtonSizes => {
+  const themeSizes = getSizes(theme)
+  return {
+    small: {
+      paddingTop: themeSizes.none,
+      paddingRight: themeSizes.tiny,
+      paddingBottom: themeSizes.none,
+      paddingLeft: themeSizes.tiny,
+      height: themeSizes.semi
+    },
+    medium: {
+      height: themeSizes.semiX,
+      paddingTop: themeSizes.none,
+      paddingRight: themeSizes.small - themeSizes.micro,
+      paddingBottom: themeSizes.none,
+      paddingLeft: themeSizes.small - themeSizes.micro
+    },
+    large: {
+      paddingTop: themeSizes.none,
+      paddingRight: themeSizes.small,
+      paddingBottom: themeSizes.none,
+      paddingLeft: themeSizes.small,
+      height: themeSizes.medium
+    }
+  }
+}
 
 /**
  * Button size tokens are used by MuiButton override, for properties `root`, `sizeLarge`, `sizeSmall`

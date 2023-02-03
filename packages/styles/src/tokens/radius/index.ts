@@ -1,6 +1,11 @@
 /* eslint-disable sort-keys */
-import themes from '@naturacosmeticos/natds-themes'
+import themes, { Theme } from '@naturacosmeticos/natds-themes'
 import { IRadius } from './IRadius'
+
+export const getRadius = (theme: Theme): IRadius => ({
+  ...theme.borderRadius,
+  circle: '50%'
+})
 
 const { borderRadius } = themes.natura.light
 

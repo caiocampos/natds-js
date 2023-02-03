@@ -1,12 +1,44 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.colorTokens = void 0;
-/* eslint-disable import/prefer-default-export */
+exports.colorTokens = exports.getColorTokens = void 0;
 var natura_1 = require("./natura");
 var avon_1 = require("./avon");
 var theBodyShop_1 = require("./theBodyShop");
 var aesop_1 = require("./aesop");
 var biome_1 = require("./biome");
-var elo_1 = require("./elo");
+var getColorTokens = function (theme) {
+    var themeColor = theme.color;
+    return {
+        colorPrimary: themeColor.primary,
+        colorOnPrimary: themeColor.onPrimary,
+        colorPrimaryLight: themeColor.primaryLight,
+        colorOnPrimaryLight: themeColor.onPrimaryLight,
+        colorPrimaryDark: themeColor.primaryDark,
+        colorOnPrimaryDark: themeColor.onPrimaryDark,
+        colorSecondary: themeColor.secondary,
+        colorOnSecondary: themeColor.onSecondary,
+        colorSecondaryLight: themeColor.secondaryLight,
+        colorOnSecondaryLight: themeColor.onSecondaryLight,
+        colorSecondaryDark: themeColor.secondaryDark,
+        colorOnSecondaryDark: themeColor.onSecondaryDark,
+        colorBackground: themeColor.background,
+        colorOnBackground: themeColor.onBackground,
+        colorSurface: themeColor.surface,
+        colorOnSurface: themeColor.onSurface,
+        colorHighlight: themeColor.highlight,
+        colorHighEmphasis: themeColor.highEmphasis,
+        colorMediumEmphasis: themeColor.mediumEmphasis,
+        colorLowEmphasis: themeColor.lowEmphasis,
+        colorLink: themeColor.link,
+        colorOnLink: themeColor.onLink,
+        colorSuccess: themeColor.success,
+        colorOnSuccess: themeColor.onSuccess,
+        colorWarning: themeColor.warning,
+        colorOnWarning: themeColor.onWarning,
+        colorAlert: themeColor.alert,
+        colorOnAlert: themeColor.onAlert
+    };
+};
+exports.getColorTokens = getColorTokens;
 /**
  * @deprecated theme-bound `colorTokens` are deprecated since v0.20 and will be removed at v1.0.
  * Please use `theme.${brand}.${mode}.color` from `natds-themes`.
@@ -53,24 +85,14 @@ exports.colorTokens = {
      */
     aesopLightColorTokens: aesop_1.aesopLightColorTokens,
     /**
-     * @deprecated `biomeDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.biome.dark.color` from `natds-themes`.
+     * @deprecated `aesopDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
+     * Please use `theme.aesop.dark.color` from `natds-themes`.
      */
     biomeDarkColorTokens: biome_1.biomeDarkColorTokens,
     /**
      * @deprecated `biomeLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.biome.light.colors` from `natds-themes`.
      */
-    biomeLightColorTokens: biome_1.biomeLightColorTokens,
-    /**
-     * @deprecated `eloDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.elo.dark.color` from `natds-themes`.
-     */
-    eloDarkColorTokens: elo_1.eloDarkColorTokens,
-    /**
-     * @deprecated `eloLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.elo.light.colors` from `natds-themes`.
-     */
-    eloLightColorTokens: elo_1.eloLightColorTokens
+    biomeLightColorTokens: biome_1.biomeLightColorTokens
 };
 //# sourceMappingURL=index.js.map

@@ -1,4 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
+var consultoriaDeBeleza_dark_1 = require("themes/consultoriaDeBeleza/consultoriaDeBeleza-dark");
+var consultoriaDeBeleza_light_1 = require("themes/consultoriaDeBeleza/consultoriaDeBeleza-light");
 var natura_light_1 = require("./themes/natura/natura-light");
 var natura_dark_1 = require("./themes/natura/natura-dark");
 var avon_light_1 = require("./themes/avon/avon-light");
@@ -9,8 +11,6 @@ var aesop_light_1 = require("./themes/aesop/aesop-light");
 var aesop_dark_1 = require("./themes/aesop/aesop-dark");
 var biome_light_1 = require("./themes/biome/biome-light");
 var biome_dark_1 = require("./themes/biome/biome-dark");
-var elo_light_1 = require("./themes/elo/elo-light");
-var elo_dark_1 = require("./themes/elo/elo-dark");
 exports.default = {
     avon: {
         dark: avon_dark_1.avonDark,
@@ -32,9 +32,9 @@ exports.default = {
         dark: biome_dark_1.biomeDark,
         light: biome_light_1.biomeLight
     },
-    elo: {
-        dark: elo_dark_1.eloDark,
-        light: elo_light_1.eloLight
+    consultoriaDeBeleza: {
+        dark: consultoriaDeBeleza_dark_1.consultoriaDeBelezaDark,
+        light: consultoriaDeBeleza_light_1.consultoriaDeBelezaLight
     }
 };
 //# sourceMappingURL=themes.js.map

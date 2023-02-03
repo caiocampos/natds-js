@@ -1,3 +1,6 @@
+import { Theme } from '@naturacosmeticos/natds-themes';
+import { IColorThemeTokens } from './IColorThemeTokens';
+export declare const getColorTokens: (theme: Theme) => IColorThemeTokens;
 /**
  * @deprecated theme-bound `colorTokens` are deprecated since v0.20 and will be removed at v1.0.
  * Please use `theme.${brand}.${mode}.color` from `natds-themes`.
@@ -7,60 +10,50 @@ export declare const colorTokens: {
      * @deprecated `avonDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.avon.dark.color` from `natds-themes`.
      */
-    avonDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    avonDarkColorTokens: IColorThemeTokens;
     /**
      * @deprecated `avonLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.avon.light.color` from `natds-themes`.
      */
-    avonLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    avonLightColorTokens: IColorThemeTokens;
     /**
      * @deprecated `naturaDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.natura.dark.color` from `natds-themes`.
      */
-    naturaDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    naturaDarkColorTokens: IColorThemeTokens;
     /**
      * @deprecated `naturaLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.natura.light.color` from `natds-themes`.
      */
-    naturaLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    naturaLightColorTokens: IColorThemeTokens;
     /**
      * @deprecated `theBodyShopDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.theBodyShop.dark.color` from `natds-themes`.
      */
-    theBodyShopDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    theBodyShopDarkColorTokens: IColorThemeTokens;
     /**
      * @deprecated `theBodyShopLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.theBodyShop.light.colors` from `natds-themes`.
      */
-    theBodyShopLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    theBodyShopLightColorTokens: IColorThemeTokens;
     /**
      * @deprecated `aesopDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.aesop.dark.color` from `natds-themes`.
      */
-    aesopDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    aesopDarkColorTokens: IColorThemeTokens;
     /**
      * @deprecated `aesopLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.aesop.light.colors` from `natds-themes`.
      */
-    aesopLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    aesopLightColorTokens: IColorThemeTokens;
     /**
-     * @deprecated `biomeDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.biome.dark.color` from `natds-themes`.
+     * @deprecated `aesopDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
+     * Please use `theme.aesop.dark.color` from `natds-themes`.
      */
-    biomeDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    biomeDarkColorTokens: IColorThemeTokens;
     /**
      * @deprecated `biomeLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
      * Please use `theme.biome.light.colors` from `natds-themes`.
      */
-    biomeLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
-    /**
-     * @deprecated `eloDarkColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.elo.dark.color` from `natds-themes`.
-     */
-    eloDarkColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
-    /**
-     * @deprecated `eloLightColorTokens` are deprecated since v0.20 and will be removed at v1.0.
-     * Please use `theme.elo.light.colors` from `natds-themes`.
-     */
-    eloLightColorTokens: import("./IColorThemeTokens").IColorThemeTokens;
+    biomeLightColorTokens: IColorThemeTokens;
 };

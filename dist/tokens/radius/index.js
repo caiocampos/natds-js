@@ -13,9 +13,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.radius = void 0;
+exports.radius = exports.getRadius = void 0;
 /* eslint-disable sort-keys */
 var natds_themes_1 = __importDefault(require("@naturacosmeticos/natds-themes"));
+var getRadius = function (theme) { return (__assign(__assign({}, theme.borderRadius), { circle: '50%' })); };
+exports.getRadius = getRadius;
 var borderRadius = natds_themes_1.default.natura.light.borderRadius;
 /**
  * @deprecated since 0.19.0.

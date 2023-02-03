@@ -2,8 +2,23 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deprecatedSizes = void 0;
+exports.deprecatedSizes = exports.getDeprecatedSizes = void 0;
 var natds_themes_1 = __importDefault(require("@naturacosmeticos/natds-themes"));
+var getDeprecatedSizes = function (theme) {
+    var themeSize = theme.size;
+    return {
+        semix: themeSize.semiX,
+        mediumx: themeSize.mediumX,
+        largex: themeSize.largeX,
+        largexx: themeSize.largeXX,
+        largexxx: themeSize.largeXXX,
+        hugex: themeSize.hugeX,
+        hugexx: themeSize.hugeXX,
+        hugexxx: themeSize.hugeXXX,
+        veryhuge: themeSize.veryHuge
+    };
+};
+exports.getDeprecatedSizes = getDeprecatedSizes;
 var size = natds_themes_1.default.natura.light.size;
 /**
  * @deprecated size keys `semix`, `mediumx`, `largex*`, `hugex*` and `veryhuge` are deprecated since version 0.19

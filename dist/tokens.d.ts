@@ -16,8 +16,6 @@ declare const _default: {
         aesopLightColorTokens: import("./tokens/colors/themeBound/IColorThemeTokens").IColorThemeTokens;
         biomeDarkColorTokens: import("./tokens/colors/themeBound/IColorThemeTokens").IColorThemeTokens;
         biomeLightColorTokens: import("./tokens/colors/themeBound/IColorThemeTokens").IColorThemeTokens;
-        eloDarkColorTokens: import("./tokens/colors/themeBound/IColorThemeTokens").IColorThemeTokens;
-        eloLightColorTokens: import("./tokens/colors/themeBound/IColorThemeTokens").IColorThemeTokens;
     };
     /**
      * @deprecated `colors` is deprecated since version v0.20 and will be removed on v1.0.

@@ -13,9 +13,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.elevation = void 0;
+exports.elevation = exports.getElevation = void 0;
 /* eslint-disable sort-keys */
 var natds_themes_1 = __importDefault(require("@naturacosmeticos/natds-themes"));
+var getElevation = function (theme) {
+    var elevation = theme.elevation;
+    return __assign(__assign({}, elevation), { 0: elevation.none, 1: elevation.micro, 2: elevation.tiny, 3: elevation.small, 4: elevation.medium, 6: elevation.large, 8: elevation.largeX, 9: elevation.largeXX, 12: elevation.huge, 16: elevation.hugeX, 24: elevation.hugeXX });
+};
+exports.getElevation = getElevation;
 var naturaLightElevation = natds_themes_1.default.natura.light.elevation;
 exports.elevation = __assign(__assign({}, naturaLightElevation), { 
     /**

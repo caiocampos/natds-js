@@ -1,3 +1,5 @@
+import { Theme } from '@naturacosmeticos/natds-themes';
+export declare const getDeprecatedSizes: (theme: Theme) => typeof deprecatedSizes;
 /**
  * @deprecated size keys `semix`, `mediumx`, `largex*`, `hugex*` and `veryhuge` are deprecated since version 0.19
  * and will be deleted in v1.0.

@@ -1,6 +1,27 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.iconSizes = void 0;
+exports.iconSizes = exports.getIconSizes = void 0;
 var sizes_1 = require("../sizes");
+var getIconSizes = function (theme) {
+    var themeSizes = (0, sizes_1.getSizes)(theme);
+    return {
+        micro: themeSizes.small,
+        tiny: themeSizes.standard,
+        small: themeSizes.semi,
+        standard: themeSizes.medium,
+        medium: themeSizes.large,
+        large: themeSizes.largeX,
+        largex: themeSizes.huge,
+        largeX: themeSizes.huge,
+        largexx: themeSizes.hugeX,
+        largeXX: themeSizes.hugeX,
+        huge: themeSizes.hugeXX,
+        hugex: themeSizes.hugeXXX,
+        hugeX: themeSizes.hugeXXX,
+        hugexx: themeSizes.veryHuge,
+        hugeXX: themeSizes.veryHuge
+    };
+};
+exports.getIconSizes = getIconSizes;
 exports.iconSizes = {
     micro: sizes_1.sizes.small,
     tiny: sizes_1.sizes.standard,

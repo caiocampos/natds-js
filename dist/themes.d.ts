@@ -20,7 +20,7 @@ declare const _default: {
         dark: import("./themes/ITheme").ITheme;
         light: import("./themes/ITheme").ITheme;
     };
-    elo: {
+    consultoriaDeBeleza: {
         dark: import("./themes/ITheme").ITheme;
         light: import("./themes/ITheme").ITheme;
     };

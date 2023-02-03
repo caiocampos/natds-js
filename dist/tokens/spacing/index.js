@@ -1,6 +1,25 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.spacing = void 0;
+exports.spacing = exports.getSpacing = void 0;
 var sizes_1 = require("../sizes");
+var getSpacing = function (theme) {
+    var themeSizes = (0, sizes_1.getSizes)(theme);
+    return {
+        spacing: themeSizes.tiny,
+        spacingNone: themeSizes.none,
+        spacingMicro: themeSizes.micro,
+        spacingTiny: themeSizes.tiny,
+        spacingSmall: themeSizes.small,
+        spacingStandard: themeSizes.standard,
+        spacingSemi: themeSizes.semi,
+        spacingLarge: themeSizes.medium,
+        spacingHuge: themeSizes.large,
+        spacingHugeX: themeSizes.hugeX,
+        spacingHugeXX: themeSizes.hugeXX,
+        spacingHugeXXX: themeSizes.hugeXXX,
+        spacingVeryHuge: themeSizes.veryHuge
+    };
+};
+exports.getSpacing = getSpacing;
 exports.spacing = {
     spacing: sizes_1.sizes.tiny,
     spacingNone: sizes_1.sizes.none,

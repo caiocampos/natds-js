@@ -1,6 +1,33 @@
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.buttonSizes = void 0;
+exports.buttonSizes = exports.getButtonSizes = void 0;
 var sizes_1 = require("../sizes");
+var getButtonSizes = function (theme) {
+    var themeSizes = (0, sizes_1.getSizes)(theme);
+    return {
+        small: {
+            paddingTop: themeSizes.none,
+            paddingRight: themeSizes.tiny,
+            paddingBottom: themeSizes.none,
+            paddingLeft: themeSizes.tiny,
+            height: themeSizes.semi
+        },
+        medium: {
+            height: themeSizes.semiX,
+            paddingTop: themeSizes.none,
+            paddingRight: themeSizes.small - themeSizes.micro,
+            paddingBottom: themeSizes.none,
+            paddingLeft: themeSizes.small - themeSizes.micro
+        },
+        large: {
+            paddingTop: themeSizes.none,
+            paddingRight: themeSizes.small,
+            paddingBottom: themeSizes.none,
+            paddingLeft: themeSizes.small,
+            height: themeSizes.medium
+        }
+    };
+};
+exports.getButtonSizes = getButtonSizes;
 /**
  * Button size tokens are used by MuiButton override, for properties `root`, `sizeLarge`, `sizeSmall`
  */

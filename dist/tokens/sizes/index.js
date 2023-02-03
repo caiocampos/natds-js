@@ -13,10 +13,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sizes = void 0;
+exports.sizes = exports.getSizes = void 0;
 /* eslint-disable sort-keys */
 var natds_themes_1 = __importDefault(require("@naturacosmeticos/natds-themes"));
 var deprecatedSizes_1 = require("./deprecatedSizes");
-var size = natds_themes_1.default.natura.light.size;
-exports.sizes = __assign(__assign({}, deprecatedSizes_1.deprecatedSizes), size);
+var getSizes = function (theme) {
+    var size = theme.size;
+    return __assign(__assign({}, (0, deprecatedSizes_1.getDeprecatedSizes)(theme)), size);
+};
+exports.getSizes = getSizes;
+exports.sizes = __assign(__assign({}, deprecatedSizes_1.deprecatedSizes), natds_themes_1.default.natura.light.size);
 //# sourceMappingURL=index.js.map
